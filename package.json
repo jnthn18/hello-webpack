@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jon More",
+  "author": "jnthn18",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jnthn18/hello-webpack.git"
+  },
   "devDependencies": {
     "webpack": "^1.12.9"
   },
