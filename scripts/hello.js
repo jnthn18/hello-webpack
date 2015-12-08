@@ -1,2 +1,19 @@
 require('./../stylesheets/global.sass');
-document.write("Hello Webpack");
+
+'use strict'
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var Hello = React.createClass({
+  render: function() {
+    return (
+      <div>Hello Webpack we're using React!</div>
+    );
+  }
+});
+
+ReactDOM.render(
+  <Hello />,
+  document.getElementById('container')
+);
