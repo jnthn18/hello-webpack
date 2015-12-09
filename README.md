@@ -12,8 +12,10 @@ This is a webpack setup with React and Sass for quickstarting projects.
 It supports AMD and CommonJS, among other module systems (Angular, ES6). If you don't know what to use, use CommonJS.
 
 ##Getting Started
-`
+```
 npm install
 
+git remote set-url origin git://new.url.here
+
 webpack
-`
+```
