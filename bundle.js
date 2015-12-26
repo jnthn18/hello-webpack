@@ -60,7 +60,7 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      'Hello Webpack we\'re using React!'
+	      'Hello Webpack now using React!'
 	    );
 	  }
 	});

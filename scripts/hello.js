@@ -8,7 +8,7 @@ var ReactDOM = require('react-dom');
 var Hello = React.createClass({
   render: function() {
     return (
-      <div>Hello Webpack we're using React!</div>
+      <div>Hello Webpack now using React!</div>
     );
   }
 });

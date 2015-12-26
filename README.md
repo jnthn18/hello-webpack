@@ -17,5 +17,5 @@ npm install
 
 git remote set-url origin git://new.url.here
 
-webpack
+webpack --watch
 ```
