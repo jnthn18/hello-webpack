@@ -1,6 +1,6 @@
-##Webpack with React and Sass
+##Webpack with React/Redux and Sass
 
-This is a webpack setup with React and Sass for quickstarting projects.
+This is a webpack setup with React/Redux and Sass for quickstarting projects. The Redux implementation is based off of Dan Abramov's todo tutorial on egghead.io
 
 ###Why webpack?
 [By Pete Hunt](https://github.com/petehunt/webpack-howto)
@@ -9,13 +9,11 @@ This is a webpack setup with React and Sass for quickstarting projects.
 
 * **It often replaces grunt or gulp** because it can build and bundle CSS, preprocessed CSS, compile-to-JS languages and images, among other things.
 
-It supports AMD and CommonJS, among other module systems (Angular, ES6). If you don't know what to use, use CommonJS.
+* It supports AMD and CommonJS, among other module systems (Angular, ES6). If you don't know what to use, use CommonJS.
 
 ##Getting Started
 ```
 npm install
 
-git remote set-url origin git://new.url.here
-
-webpack --watch
+npm start
 ```
