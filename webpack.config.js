@@ -1,13 +1,43 @@
 module.exports = {
-  entry: "./scripts/hello.js",
+  entry: {
+    javascript: "./app/js/app.js",
+    html: "./app/index.html"
+  },
   output: {
-    filename: "bundle.js"
+    path: __dirname + "/dist",
+    filename: "./js/app.js"
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', query: {cacheDirectory: true, presets: ['es2015', 'react']}},
-      { test: /\.sass$/, loader: 'style-loader!css-loader!sass-loader?indentedSyntax' },
-      { test: /\.css$/, loader: 'style-loader!css-loader' }
+      {
+        test: /\.html$/,
+        loader: "file?name=[name].[ext]"
+      },
+      {
+        test: /\.sass$/,
+        loader: 'style-loader!css-loader!sass-loader?indentedSyntax'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ["react-hot", 'babel?'+JSON.stringify(
+          {
+            presets: ['react', 'es2015'],
+            "plugins": [
+              "syntax-class-properties",
+              "syntax-decorators",
+              "syntax-object-rest-spread",
+
+              "transform-class-properties",
+              "transform-object-rest-spread"
+            ]
+          }
+        )]
+      }
     ]
   }
 };
