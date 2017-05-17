@@ -1,8 +1,8 @@
-##Webpack with React and Sass
+## Webpack with React and Sass
 
 This is a webpack setup with React and Sass for quickstarting projects.
 
-###Why webpack?
+### Why webpack?
 [By Pete Hunt](https://github.com/petehunt/webpack-howto)
 
 * **It's like browserify** but can split your app into multiple files. If you have multiple pages in a single-page app, the user only downloads code for just that page. If they go to another page, they don't redownload common code.
@@ -11,7 +11,7 @@ This is a webpack setup with React and Sass for quickstarting projects.
 
 It supports AMD and CommonJS, among other module systems (Angular, ES6). If you don't know what to use, use CommonJS.
 
-##Getting Started
+## Getting Started
 ```
 npm install
 
